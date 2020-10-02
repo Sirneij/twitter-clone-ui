@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
     <title>Twitter clone User Interface</title>
     <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="style.css" />
@@ -11,7 +14,7 @@
     <!-- main page -->
     <main class="main" id="main-page">
       <!-- left  -->
-      <section class="left">
+      <section class="left change-to-theme-dark-2">
         <article class="left-content">
           <section>
             <i class="fas fa-search"></i>
@@ -25,11 +28,24 @@
             <i class="fas fa-comments"></i>
             <h3 class="left-content-heading">Join the people</h3>
           </section>
+          <section class="dark-mode-toggler-wrapper">
+            <label class="dark-mode-toggler">
+              <input
+                class="dark-mode-toggler-check-input"
+                type="checkbox"
+                id="theme-checkbox"
+              />
+              <span class="slider"></span>
+            </label>
+            <span class="dark-mode-toggler-check-label theme-switch"
+              >Dark theme</span
+            >
+          </section>
         </article>
       </section>
       <!-- end of left -->
       <!-- right -->
-      <section class="right">
+      <section class="right change-to-theme-dark-1">
         <!-- <article class="right-content"> -->
         <form action="." class="right-content-form">
           <input
@@ -37,7 +53,8 @@
             name="user-info"
             id="user-info"
             class="user-info"
-            placeholder="Phone, Email, or Username" minlength="4"
+            placeholder="Phone, Email, or Username"
+            minlength="4"
           />
           <div>
             <input
@@ -45,7 +62,8 @@
               name="password"
               id="password"
               class="password"
-              placeholder="Password" minlength="6"
+              placeholder="Password"
+              minlength="6"
             />
             <label>Forgot password?</label>
           </div>
@@ -55,15 +73,19 @@
           <i class="fas fa-dove"></i>
           <h1>Explore what's happening in the world.</h1>
           <h4>Join us today</h4>
-          <button type="button" class="btn btn-sign-up main-btn">Sign up</button>
-          <button type="button" class="btn btn-sign-in main-btn">Sign in</button>
+          <button type="button" class="btn btn-sign-up main-btn">
+            Sign up
+          </button>
+          <button type="button" class="btn btn-sign-in main-btn">
+            Sign in
+          </button>
         </section>
         <!-- </article> -->
       </section>
       <!-- end of right -->
 
       <!-- footer -->
-      <footer class="main-page-footer">
+      <footer class="main-page-footer change-to-theme-dark-1">
         <ul>
           <li><a href="#">About</a></li>
           <li><a href="#">Blog</a></li>
@@ -82,390 +104,6 @@
       <!-- end of footer -->
     </main>
     <!-- end of main page -->
-
-    <!-- login page -->
-    <main class="login-page" id="login-page">
-      <!-- Header -->
-
-      <!-- navigation -->
-      <nav class="login-page-nav">
-        <ul>
-          <li class="brand">
-            <a href="#"><i class="fas fa-dove"></i> Home</a>
-          </li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Language: English</a></li>
-        </ul>
-      </nav>
-      <!-- end of navigation -->
-
-      <!-- end of header -->
-      <section class="login">
-        <article class="login-content">
-          <h2>Log in to twitter</h2>
-          <form action="." class="login-form" id="login-form">
-            <input type="text" placeholder="Phone, email, or username" minlength="4" id="username"/>
-            <div class="password-forgot">
-              <a href="#">Forgot password?</a>
-              <input type="password" placeholder="Password" id="userpassword" minlength="6"/>
-            </div>
-            <div class="checkbox-login">
-              <input
-                type="checkbox"
-                name="remember"
-                id="remember"
-                class="login-form-checkbox"
-              />
-              <label for="remember">Remember me</label>
-            </div>
-              <button type="submit" class="btn btn-sign-in" id="login-btn" disabled>Login</button>
-            </div>
-          </form>
-        </article>
-        <footer class="login-footer">
-          <p>New to twitter? <a href="#">Sign up now</a></p>
-          <p>
-            Aready using twitter via text message?
-            <a href="#">Activate your account now</a>
-          </p>
-        </footer>
-      </section>
-      <section class="login-modal" id="login-modal">
-        <i class="fas fa-times" id="close-modal"></i>
-        <p>The username and password you entered were either invalid or don't match our records. Kindly double-check and try again...</p>
-      </section>
-    </main>
-    <!-- end of login page -->
-
-    <!-- feeds page -->
-    <main class="feeds-page" id="feeds-page">
-      <!-- feeds navigation -->
-      <nav class="feeds-nav">
-        <div class="icons">
-          <a href="#" class="active nav-item"><i class="fas fa-home"></i></a>
-          <a href="#" class="nav-item"><i class="fas fa-hashtag"></i></a>
-          <a href="#" class="nav-item"><i class="fas fa-bell"></i></a>
-          <a href="#" class="nav-item"><i class="fas fa-envelope"></i></a>
-        </div>
-        <form class="search-bar">
-          <i class="fas fa-search"></i>
-          <input type="search" name="search" id="search" placeholder="Search twitter" class="search-bar-input">
-        </form>
-        <div class="user" id="user">
-          <div class="user-img-wrapper">
-            <img src="images/user1.jpg" alt="User 1">
-          </div>
-          <a href="#" class="user-link">John Idogun</a>
-          <i class="fas fa-chevron-down"></i>
-        </div>
-      </nav>
-      <!-- end of feeds navigation -->
-      <!-- feeds content -->
-      <section class="feeds-content">
-      <article class="feeds-header" >
-        <section class="feeds-header-top">
-          <h4>Home</h4>
-          <i class="far fa-star"></i>
-        </section>
-        <form action="." class="header-post">
-          <article class="header-img-wrapper">
-            <img src="images/user1.jpg" alt="User 1">
-          </article>
-          <input type="text" placeholder="What's happening?">
-          <i class="far fa-image"></i>
-          <i class="fas fa-camera"></i>
-          <i class="far fa-chart-bar"></i>
-          <button type="button" class="btn posts-main-btn"><i class="fas fa-plus"></i></button>
-        </form>
-      </article>
-      <article class="posts">
-        <!-- post 1 -->
-        <section class="post">
-          <article class="user-avatar">
-            <img src="images/user1.jpg" alt="User 1">
-          </article>
-          <article class="post-content">
-            <section class="post-user-info">
-              <h4>Olabode Victor</h4>
-              <i class="fas fa-check-circle"></i>
-              <span>@Vicky 15min</span>
-            </section>
-            <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, necessitatibus incidunt, unde veritatis cumque laborum quis provident impedit corrupti qui laboriosam mollitia amet iusto rerum a architecto doloribus, commodi hic? Veritatis, quas! Eum atque, quidem veritatis sapiente aperiam modi ad neque! Voluptatibus velit eaque autem harum ullam alias perspiciatis aut.</p>
-            <section class="post-img">
-              <img src="images/post-img-1.jpg" alt="Post 1">
-            </section>
-            <section class="post-icons">
-              <i class="fas fa-comments"></i>
-              <i class="fas fa-retweet"></i>
-              <i class="fas fa-heart"></i>
-              <i class="fas fa-share-alt"></i>
-            </section>
-          </article>
-        </section>
-        <!-- end of post 1 -->
-        <!-- post 2 -->
-        <section class="post">
-          <article class="user-avatar">
-            <img src="images/user2.jpg" alt="User 2">
-          </article>
-          <article class="post-content">
-            <section class="post-user-info">
-              <h4>Ayo Idowu</h4>
-              <i class="fas fa-check-circle"></i>
-              <span>@Haywhy 15min</span>
-            </section>
-            <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, necessitatibus incidunt, unde veritatis cumque laborum quis provident impedit corrupti qui laboriosam mollitia amet iusto rerum a architecto doloribus, commodi hic? Veritatis, quas! Eum atque, quidem veritatis sapiente aperiam modi ad neque! Voluptatibus velit eaque autem harum ullam alias perspiciatis aut.</p>
-            <section class="post-img">
-              <img src="images/post-img-2.jpg" alt="Post 2">
-            </section>
-            <section class="post-icons">
-              <i class="fas fa-comments"></i>
-              <i class="fas fa-retweet"></i>
-              <i class="fas fa-heart"></i>
-              <i class="fas fa-share-alt"></i>
-            </section>
-          </article>
-        </section>
-        <!-- end of post 2 -->
-
-        <!-- post 3 -->
-        <section class="post">
-          <article class="user-avatar">
-            <img src="images/user3.jpg" alt="User 3">
-          </article>
-          <article class="post-content">
-            <section class="post-user-info">
-              <h4>John Idogun</h4>
-              <i class="fas fa-check-circle"></i>
-              <span>@Sirneij 15min</span>
-            </section>
-            <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, necessitatibus incidunt, unde veritatis cumque laborum quis provident impedit corrupti qui laboriosam mollitia amet iusto rerum a architecto doloribus, commodi hic? Veritatis, quas! Eum atque, quidem veritatis sapiente aperiam modi ad neque! Voluptatibus velit eaque autem harum ullam alias perspiciatis aut.</p>
-            <section class="post-img">
-              <img src="images/post-img-3.jpg" alt="Post 3">
-            </section>
-            <section class="post-icons">
-              <i class="fas fa-comments"></i>
-              <i class="fas fa-retweet"></i>
-              <i class="fas fa-heart"></i>
-              <i class="fas fa-share-alt"></i>
-            </section>
-          </article>
-        </section>
-        <!-- end of post 3 -->
-
-        <!-- post 4 -->
-        <section class="post">
-          <article class="user-avatar">
-            <img src="images/user4.jpg" alt="User 4">
-          </article>
-          <article class="post-content">
-            <section class="post-user-info">
-              <h4>Iwayemi Abimbola</h4>
-              <i class="fas fa-check-circle"></i>
-              <span>@Bim 15min</span>
-            </section>
-            <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, necessitatibus incidunt, unde veritatis cumque laborum quis provident impedit corrupti qui laboriosam mollitia amet iusto rerum a architecto doloribus, commodi hic? Veritatis, quas! Eum atque, quidem veritatis sapiente aperiam modi ad neque! Voluptatibus velit eaque autem harum ullam alias perspiciatis aut.</p>
-            <section class="post-img">
-              <img src="images/post-img-4.jpg" alt="Post 4">
-            </section>
-            <section class="post-icons">
-              <i class="fas fa-comments"></i>
-              <i class="fas fa-retweet"></i>
-              <i class="fas fa-heart"></i>
-              <i class="fas fa-share-alt"></i>
-            </section>
-          </article>
-        </section>
-        <!-- end of post 4 -->
-
-        <!-- post 5 -->
-        <section class="post">
-          <article class="user-avatar">
-            <img src="images/user5.jpg" alt="User 5">
-          </article>
-          <article class="post-content">
-            <section class="post-user-info">
-              <h4>Fasae Ayobami</h4>
-              <i class="fas fa-check-circle"></i>
-              <span>@Fasae 15min</span>
-            </section>
-            <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, necessitatibus incidunt, unde veritatis cumque laborum quis provident impedit corrupti qui laboriosam mollitia amet iusto rerum a architecto doloribus, commodi hic? Veritatis, quas! Eum atque, quidem veritatis sapiente aperiam modi ad neque! Voluptatibus velit eaque autem harum ullam alias perspiciatis aut.</p>
-            <section class="post-img">
-              <img src="images/post-img-5.jpg" alt="Post 5">
-            </section>
-            <section class="post-icons">
-              <i class="fas fa-comments"></i>
-              <i class="fas fa-retweet"></i>
-              <i class="fas fa-heart"></i>
-              <i class="fas fa-share-alt"></i>
-            </section>
-          </article>
-        </section>
-        <!-- end of post 5 -->
-      </article>
-
-      <article class="follow">
-        <h3 class="follow-heading">
-          Who to follow
-        </h3>
-        <!-- follow user 1 -->
-        <section class="follow-user">
-          <article class="follow-user-img">
-            <img src="images/user3.jpg" alt="User 3">
-          </article>
-          <article class="follow-user-info">
-            <h4>Joseph Ayobami</h4>
-            <p>@joshthebrain</p>
-          </article>
-          <button type="button" class="btn follow-btn">follow</button>
-        </section>
-        <!-- end of follow user 1 -->
-
-        <!-- follow user 2 -->
-        <section class="follow-user">
-          <article class="follow-user-img">
-            <img src="images/user4.jpg" alt="User 4">
-          </article>
-          <article class="follow-user-info">
-            <h4>Isaac Akpan</h4>
-            <p>@codingaddict</p>
-          </article>
-          <button type="button" class="btn follow-btn">follow</button>
-        </section>
-        <!-- end of follow user 2 -->
-
-        <!-- follow user 3 -->
-        <section class="follow-user">
-          <article class="follow-user-img">
-            <img src="images/user5.jpg" alt="User 5">
-          </article>
-          <article class="follow-user-info">
-            <h4>Abraham Akerele</h4>
-            <p>@codinggod</p>
-          </article>
-          <button type="button" class="btn follow-btn">follow</button>
-        </section>
-        <!-- end of follow user 3 -->
-
-        <!-- follow user 4 -->
-        <section class="follow-user">
-          <article class="follow-user-img">
-            <img src="images/user6.jpg" alt="User 6">
-          </article>
-          <article class="follow-user-info">
-            <h4>Audu Jacob</h4>
-            <p>@dsamaster</p>
-          </article>
-          <button type="button" class="btn follow-btn">follow</button>
-        </section>
-        <!-- end of follow user 4 -->
-
-        <section class="follow-link">
-          <a href="#">Show more</a>
-        </section>
-        <footer class="follow-footer">
-          <ul>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy/Policy</a></li>
-            <li><a href="#">Cookies</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">More</a></li>
-          </ul>
-        </footer>
-      </article>
-    </section>
-      <!-- end of feeds content -->
-
-      <button type="button" class="btn post-btn" id="post-modal-btn">+<i class="fas fa-feather-alt"></i></button>
-      <!-- post modal -->
-      <section class="post-modal-wrapper">
-        <article class="modal" id="post-modal">
-          <form action="." id="post-modal-form" autocomplete="off">
-          <section class="modal-header">
-            <i class="fas fa-times"></i>
-            <button type="submit" class="btn btn-post-modal" id="post-modal-submit-btn" disabled>Post</button>
-          </section>
-          
-          <section class="modal-body">
-            <article class="modal-img">
-              <img src="images/user1.jpg" alt="User 1">
-            </article>
-            <input type="text" placeholder="What's happening?" class="modal-input" id="post-modal-input">
-            <div>
-              <span id="post-modal-input-counter">0/240</span>
-              <i class="far fa-smile" id="post-modal-expression"></i>
-            </div>
-          </section>
-          <section class="modal-footer">
-            <article class="modal-icons">
-              <i class="far fa-image"></i>
-              <i class="fas fa-camera"></i>
-              <i class="far fa-chart-bar"></i>
-              <span id="post-modal-span" data-disabled="yes" class="disabled">+</span>
-            </article>
-          </section>
-          </form>
-        </article>
-      </section>
-      <!-- end of post modal -->
-
-      <!-- sidebar -->
-      <section class="sidebar-wrapper" id="sidebar-wrapper">
-        <article class="sidebar" id="sidebar">
-          <section class="sidebar-header">
-            <h2>Account info</h2>
-            <i class="fas fa-times" id="close-sidebar"></i>
-          </section>
-          <section class="sidebar-user">
-            <article class="sidebar-user-img">
-              <img src="images/user1.jpg" alt="User 1">
-            </article>
-            <span>+</span>
-          </section>
-          <section class="sidebar-user-info">
-            <h4>John John</h4>
-            <p>@sirneij</p>
-          </section>
-          <section class="following">
-              <p class="following-text">
-                <span>711</span> following
-              </p>
-              <p class="following-text">
-                <span>7.5k</span> followers
-              </p>
-          </section>
-          <section class="sidebar-list-1">
-            <ul>
-              <li><a href="#"><i class="far fa-user"></i>Profile</a></li>
-              <li><a href="#"><i class="far fa-list-alt"></i>List</a></li>
-              <li><a href="#"><i class="far fa-bookmark"></i>Bookmarks</a></li>
-              <li><a href="#"><i class="fab fa-adversal"></i>Ads</a></li>
-              <li><a href="#"><i class="fas fa-chart-line"></i>Analytics</a></li>
-            </ul>
-          </section>
-          <section class="sidebar-list-2">
-            <ul>
-              <li><a href="#">Settings and Privacy</a></li>
-              <li><a href="#">Help Center</a></li>
-              <li><a href="#">Logout</a></li>
-              
-            </ul>
-          </section>
-          
-            <section class="dark-mode-toggler-wrapper">
-              <label class="dark-mode-toggler" >
-                <input class="dark-mode-toggler-check-input" type="checkbox" id="theme-checkbox"/>
-                <span class="slider"></span>
-              </label>
-              <span class="dark-mode-toggler-check-label theme-switch">Dark theme</span>
-            </section>
-          
-        </article>
-      </section>
-      <!-- end of sidebar -->
-    </main>
-    <!-- end of feeds page -->
-
-    <script src="script.js"></script>
+    <script src="main.js" async></script>
   </body>
 </html>
