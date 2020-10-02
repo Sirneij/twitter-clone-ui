@@ -196,7 +196,7 @@ button:not(:disabled),
   padding: 1.5rem;
   border: 0.1rem solid #ddd;
 }
-.theme-dark-1 .main-page-footer {
+.theme-dark-1.main-page-footer {
   background-color: #1c2938;
   border-top: 0.1rem solid #444444;
   border-bottom: none;
@@ -215,7 +215,7 @@ button:not(:disabled),
   color: #444444;
   font-weight: 300;
 }
-.theme-dark-1 .main-page-footer a {
+.theme-dark-1.main-page-footer a {
   color: #fff;
 }
 /* end of main-page-footer */
