@@ -43,7 +43,6 @@ postModalInput.addEventListener("input", (e) => {
     if (e.target.value === "") {
       e.target.value.length.reset;
       document.getElementById("post-modal-form").reset();
-      postModalInputCounter.textContent = "0/240";
     } else if (e.target.value.length > 0) {
       postModalInputCounter.textContent = e.target.value.length + "/240";
     }
